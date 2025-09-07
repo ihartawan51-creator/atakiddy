@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ata Kiddy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-white mb-4">Ata Kiddy</h1>
+            <p class="text-xl text-blue-100">Petualang Kecil dengan Sepeda BMX</p>
+        </header>
+
+        <!-- Main Profile Card -->
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden card-hover">
+            <div class="md:flex">
+                <!-- Profile Image Section -->
+                <div class="md:w-1/2 bg-gradient-to-br from-blue-400 to-blue-600 p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <!-- SVG Illustration of Kid with BMX -->
+                        <svg width="300" height="300" viewBox="0 0 300 300" class="mx-auto mb-4">
+                            <!-- Background circle -->
+                            <circle cx="150" cy="150" r="140" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+                            
+                            <!-- BMX Bike -->
+                            <!-- Back wheel -->
+                            <circle cx="80" cy="200" r="25" fill="#1e3a8a" stroke="#0f172a" stroke-width="3"/>
+                            <circle cx="80" cy="200" r="15" fill="#374151"/>
+                            <!-- Front wheel -->
+                            <circle cx="220" cy="200" r="25" fill="#1e3a8a" stroke="#0f172a" stroke-width="3"/>
+                            <circle cx="220" cy="200" r="15" fill="#374151"/>
+                            
+                            <!-- Bike frame -->
+                            <path d="M80 200 L150 160 L220 200 M150 160 L150 180 M120 180 L180 180" 
+                                  stroke="#1e40af" stroke-width="4" fill="none"/>
+                            
+                            <!-- Handlebars -->
+                            <path d="M220 200 L230 150 M225 150 L235 150" 
+                                  stroke="#374151" stroke-width="3" fill="none"/>
+                            
+                            <!-- Seat -->
+                            <ellipse cx="120" cy="175" rx="15" ry="5" fill="#dc2626"/>
+                            
+                            <!-- Kid figure -->
+                            <!-- Head -->
+                            <circle cx="200" cy="130" r="20" fill="#fbbf24"/>
+                            <!-- Hair -->
+                            <path d="M180 120 Q200 110 220 120 Q215 125 200 125 Q185 125 180 120" fill="#92400e"/>
+                            <!-- Eyes -->
+                            <circle cx="195" cy="128" r="2" fill="#000"/>
+                            <circle cx="205" cy="128" r="2" fill="#000"/>
+                            <!-- Smile -->
+                            <path d="M192 135 Q200 140 208 135" stroke="#000" stroke-width="1.5" fill="none"/>
+                            
+                            <!-- Body -->
+                            <ellipse cx="200" cy="165" rx="12" ry="20" fill="#ef4444"/>
+                            <!-- Arms -->
+                            <path d="M188 155 L225 150" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M212 155 L235 150" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+                            <!-- Legs -->
+                            <path d="M195 180 L190 210" stroke="#1d4ed8" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M205 180 L210 210" stroke="#1d4ed8" stroke-width="6" stroke-linecap="round"/>
+                            
+                            <!-- Helmet -->
+                            <ellipse cx="200" cy="125" rx="22" ry="18" fill="#dc2626" opacity="0.8"/>
+                            <ellipse cx="200" cy="125" rx="18" ry="14" fill="none" stroke="#991b1b" stroke-width="2"/>
+                            
+                            <!-- Fun elements -->
+                            <text x="50" y="50" font-family="Arial" font-size="20" fill="#fbbf24">⭐</text>
+                            <text x="250" y="60" font-family="Arial" font-size="16" fill="#fbbf24">✨</text>
+                            <text x="40" y="100" font-family="Arial" font-size="14" fill="#fbbf24">🌟</text>
+                        </svg>
+                        
+                        <h2 class="text-2xl font-bold text-white mb-2">Ata Kiddy</h2>
+                        <p class="text-blue-100">Umur 7 Tahun</p>
+                    </div>
+                </div>
+
+                <!-- Profile Info Section -->
+                <div class="md:w-1/2 p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Tentang Ata</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">🚴‍♂️</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-700">Hobi Favorit</h4>
+                                <p class="text-gray-600">Bersepeda BMX dan bermain di taman</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">🎨</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-700">Warna Favorit</h4>
+                                <p class="text-gray-600">Biru tua seperti sepeda BMX kesayangan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">⭐</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-700">Prestasi</h4>
+                                <p class="text-gray-600">Juara lomba sepeda anak se-kelurahan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">🎯</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-700">Cita-cita</h4>
+                                <p class="text-gray-600">Menjadi atlet BMX profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 text-center card-hover">
+                <div class="text-4xl mb-4">🏆</div>
+                <h3 class="font-bold text-gray-800 mb-2">Keterampilan BMX</h3>
+                <p class="text-gray-600">Mahir melakukan trik dasar dan lompatan kecil</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 text-center card-hover">
+                <div class="text-4xl mb-4">🎮</div>
+                <h3 class="font-bold text-gray-800 mb-2">Gaming</h3>
+                <p class="text-gray-600">Suka bermain game balap sepeda dan petualangan</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 text-center card-hover">
+                <div class="text-4xl mb-4">📚</div>
+                <h3 class="font-bold text-gray-800 mb-2">Belajar</h3>
+                <p class="text-gray-600">Siswa kelas 2 SD yang rajin dan ceria</p>
+            </div>
+        </div>
+
+        <!-- Fun Facts -->
+        <div class="max-w-4xl mx-auto mt-8 bg-white rounded-2xl p-8 card-hover">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Fakta Menarik tentang Ata</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">🚲</span>
+                        <p class="text-gray-700">Memiliki sepeda BMX biru tua kesayangan bernama "Thunder"</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">⏰</span>
+                        <p class="text-gray-700">Bersepeda setiap sore selama 1 jam</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">👥</span>
+                        <p class="text-gray-700">Memiliki klub sepeda dengan 5 teman sebaya</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">🎪</span>
+                        <p class="text-gray-700">Suka menonton pertunjukan BMX freestyle</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">🌟</span>
+                        <p class="text-gray-700">Bermimpi tampil di kompetisi BMX nasional</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">🎵</span>
+                        <p class="text-gray-700">Suka mendengarkan musik saat bersepeda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12">
+            <p class="text-white text-lg">"Setiap hari adalah petualangan baru dengan sepeda BMX!" - Ata Kiddy</p>
+        </footer>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97b343b2233adf83',t:'MTc1NzIxNzI2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
